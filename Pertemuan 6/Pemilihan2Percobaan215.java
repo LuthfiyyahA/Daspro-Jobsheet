@@ -3,13 +3,13 @@ public class Pemilihan2Percobaan215 {
     public static void main (String [] args) {
         Scanner input15 = new Scanner(System.in);
         System.out.print("Masukkan bilangan bulat sudut 1 : ");
-        int sudut1 = input15.nextInt();
+        float sudut1 = input15.nextFloat();
         System.out.print("Masukkan bilangan bulat sudut 2 : ");
-        int sudut2 = input15.nextInt();
+        float sudut2 = input15.nextFloat();
         System.out.print("Masukkan bilangan bulat sudut 3 : ");
-        int sudut3 = input15.nextInt();
+        float sudut3 = input15.nextFloat();
 
-        int totalSudut;
+        float totalSudut;
         totalSudut = sudut1+sudut2+sudut3;
 
         if (totalSudut == 180) {
@@ -21,7 +21,7 @@ public class Pemilihan2Percobaan215 {
                 } else {
                     System.out.println("Segitiga tersebut adalah segitiga sembarang");
                 }
-            }
+            } 
         } else {
             System.out.println("Bukan Segitiga");
         }
