@@ -1,7 +1,6 @@
-import java.util.Scanner;
 public class ArrayBilangan15 {
 public static void main(String[] args) {
-        int [] bil = new int[4];
+    int [] bil = new int[4];
         
         bil [0] = 5;
         bil [1] = 13;
