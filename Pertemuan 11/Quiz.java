@@ -16,10 +16,22 @@ public class Quiz {
                 input.nextLine();
                 success = (answer == number);
 
+                if (answer < number) {
+                    System.out.println("Lebih besar dari " + answer);
+                } else if (answer > number) {
+                    System.out.println("Lebih kecil dari " + answer);
+                } else {
+                    success = true;
+                }
+
             } while (!success);
-            System.out.print("Apakah anda ingin mengulang permainan (Y/y) ? ");
+            System.out.print("Apakah anda ingin mengulang permainan (y/n) ? ");
             menu = input.nextLine().charAt(0);
 
-        } while (menu == 'y' || menu == "Y");
+            if (menu == 'n' || menu == 'N') {
+                System.out.println("Keluar dari permainan....");
+                break;
+            }
+        } while (menu == 'y' || menu == 'Y');
     }
 }
